@@ -26,11 +26,12 @@ How to do it with selenium:
 You will need selenium wire and firefox to do this!
 
 Setup your selenium like normal, but intercept the requests with this:
-
+```
 browser.request_interceptor = interceptor
+```
 
 This will capture all request, headers, etc. Now for the interceptor function:
-
+```
 def interceptor(request):
     if(request.url == "https://account.battle.net/creation/flow/creation-full/step/get-started"):
         response = request.body.decode('utf-8')
@@ -38,7 +39,8 @@ def interceptor(request):
         token = splitted[1].split('|')
         print(token[0])
         request.abort()
-        
+```   
+     
 This will intercept the request just before the country, dob, and funcaptcha token gets sent to blizzard. This will block the request and get the captcha token so that you can use it on another session (For example a session with proxies)
 
 As long as you dont submit a captcha, you will constantly get 0 click captchas (until you need to solve a few 1-2 click captchas). This is how I achieved the "Captcha Bypass" in Hexogen.
