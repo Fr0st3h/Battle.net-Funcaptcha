@@ -45,7 +45,7 @@ This will intercept the request just before the country, dob, and funcaptcha tok
 
 As long as you dont submit a captcha, you will constantly get 0 click captchas (until you need to solve a few 1-2 click captchas). This is how I achieved the "Captcha Bypass" in Hexogen.
 
-#Never share code or ideas with even those you think you trust.
+#Never share code or ideas, even with those who you "trust"
 
 
 
