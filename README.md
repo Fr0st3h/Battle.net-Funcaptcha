@@ -1,6 +1,10 @@
 # Battle.net-Funcaptcha
 A simple trick to get the best captchas when loading their webpage on a proxy
 
+UPDATE: 
+Found a better way to use proxies and still get the best captcha.
+When using proxies, make sure https://blizzard-api.arkoselabs.com is in the exclude hosts in the seleniumwire settings
+
 Video Demo: https://www.youtube.com/watch?v=8ESSx5QqLBY
 
 As you can see in the video, im able to "generate" a bunch of captcha tokens to use later on, all without a captcha service.
